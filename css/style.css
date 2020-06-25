@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 微軟正黑體;
+}
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 300px;
+    background-color: #424242;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header .data-get{
+    display: flex;
+    flex-direction: column;
+}
+
+.header label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFD366;
+}
+
+.header .data-get input{
+    width: 250px;
+    height: 40px;
+    background: rgba(255,255,255,0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    font-size: 24px;
+    color: rgba(255,255,255,0.50);
+    margin-bottom: 20px;
+
+}
+
+.header #btn{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: #FFD366;
+    font-size: 24px;
+    color: #424242;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+#btn:hover{
+    background: #FFD366;
+    box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+}
+
+#btn:active{
+    background-color: #DEA921;
+}
+
+.bmiAns{
+    position: absolute;
+    width: 100px;
+    text-align: left;
+    bottom: 45px;
+    right: -110px;
+}
+
+.circular1{
+    width: 50px;
+    height: 50px;
+
+    background-image: #fff url(../assets/icons_loop.png) !important;
+}
+
+/* 按鈕變化 */
+
+.blue{
+    background-color: #424242 !important;
+    border: 3px solid #31BAF9;
+}
+
+
+.blue p{
+    color: #31BAF9;
+
+}
+
+.green{
+    background-color: #424242 !important;
+    border: 3px solid #86D73E;
+
+}
+
+.green p{
+    color: #86D73E;
+}
+
+.orange1{
+    background-color: #424242 !important;
+    border: 3px solid #FF982D;
+
+}
+
+.orange1 p{
+    color: #FF982D;
+}
+
+.orange2{
+    background-color: #424242 !important;
+    border: 3px solid #FF6C02;
+
+}
+
+.orange2 p{
+    color: #FF6C02;
+}
+
+.red{
+    background-color: #424242 !important;
+    border: 3px solid #FF1200;
+
+}
+
+.red p{
+    color: #FF1200;
+}
+
+
+
+
+
+
+/* 顯示bmi頁面 */
+
+.content{
+    background-color: hsla(225, 100%, 99%, 0.856);
+}
+
+
+.content h2{
+    font-size: 24px;
+    color: #424242;
+    font-weight: 600;
+    text-align: center;
+    padding: 35px;
+}
+
+.bmi-list{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.bmi-list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 624px;
+    height: 64px;
+    margin-bottom: 20px;
+    box-shadow: -1em 3px 0.8em rgba(228, 222, 207, 0.521);
+    transition: 0.3s;
+}
+
+.bmi-list li:hover{
+    transform: translateX(5px) translateY(-8px);
+    box-shadow: -2em 3px 2em rgba(228, 222, 207, 0.521);
+}
+
+.bmi-list p{
+    font-size: 12px;
+    color: #424242;
+}
+
+.bmi-list p span{
+    font-size: 20px;
+    color: #424242;
+    margin-left: 5px;
+}
+
+.bmi-list img{
+    width: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+.lightBar{
+    width: 7px;
+    height: 62px;
+}
+
+#blue{
+    background-color: #31BAF9;
+}
+
+#green{
+    background-color: #86D73E;
+}
+
+#orange1{
+    background-color: #FF982D;
+}
+
+#orange2{
+    background-color: #FF6C02;
+}
+
+#red{
+    background-color: #FF1200;
+}
+
+
+
+/* 頁尾 */
+
+
+.footer{
+    height: 90px;
+    background-color: #FFD366;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer img{
+    -webkit-filter:brightness(0%);
+    height: 55px;
+    width: 55px;
+}
